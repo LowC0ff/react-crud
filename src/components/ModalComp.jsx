@@ -21,8 +21,12 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
     const [email, setEmail] = useState(dataEdit.email || "")
     return (
         <>
-            <ModaL isOpen={isOpen} onClose={onClose}>
-            </ModaL>
+            <Modal isOpen={isOpen} onClose={onClose}>
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalHeader>Cadastro de Clientes</ModalHeader>
+                </ModalContent>
+            </Modal>
         </>
     )
 }
