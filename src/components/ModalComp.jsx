@@ -25,6 +25,11 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader>Cadastro de Clientes</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody>
+                        <FormControl display="flex" flexDir="colum" gap={4}>
+                        </FormControl>
+                    </ModalBody>
                 </ModalContent>
             </Modal>
         </>
