@@ -105,3 +105,4 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
 }
 
 export default ModalComp
+
