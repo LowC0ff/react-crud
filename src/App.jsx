@@ -3,7 +3,7 @@ import {
   Box,
   Flex,
   Button,
-  useDisclousure,
+  useDisclosure,
   Table,
   Thead,
   Tr,
@@ -12,12 +12,15 @@ import {
   Td,
   useBreakPointValue
 } from "@chakra-ui/react"
+import { useEffect, useState } from "react"
+import ModalComp from "./components/ModalComp"
 
 const App = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [dasta, setData] = useState([])
+  const [dataEdit,setDataEdit] = useState({})
 
-  return (
-    <h1>start</h1>
-  )
+  return 
 }
 
 export default App
